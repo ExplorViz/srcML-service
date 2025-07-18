@@ -22,7 +22,7 @@ RUN curl -L http://www.sdml.cs.kent.edu/build/srcML-1.0.0-Boost.tar.gz | \
 RUN mkdir -p /srcml/build
 
 # Copy your source code into the container (update `.` as needed)
-COPY . /srcml
+COPY ./srcml /srcml
 
 # Set working directory
 WORKDIR /srcml/build
